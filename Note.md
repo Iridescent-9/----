@@ -18,14 +18,15 @@ f(x)&=sigmoid(x)=\frac{1}{1+e^{-x}}\\
 f'(x)&=\frac{e^{-x}}{(1+e^{-x})^2}\\
 &=f(x)\cdot (1-f(x))
 \end{aligned}
-
 $$
 
 ### 输入层
 
 $$
+\begin{aligned}
 x_1\\
 x_2
+\end{aligned}
 $$
 
 ### 隐藏层
@@ -54,7 +55,6 @@ y_1&=a^2_1\\
 y_2&=a^2_2\\
 \end{aligned}
 $$
-
 ---
 
 ## 反向传递
@@ -63,8 +63,6 @@ $$
 \begin{aligned}
 E&=\frac{1}{2}\cdot(\hat y_1-y_1)^2+\frac{1}{2}\cdot (\hat y_2-y_2)^2\\
 &=\frac{1}{2}\cdot(\hat y_1-a^2_1)^2+\frac{1}{2}\cdot (\hat y_2-a^2_2)^2\\
-\\
-
 \end{aligned}
 $$
 
@@ -90,6 +88,7 @@ $$
 \\
 \frac{\partial E}{z^2_1}&=\frac{\partial E}{\partial a^2_1}\cdot\frac{\partial a^2_1}{z^2_1}\\
 &=a^2_1\cdot(a^2_1-\hat y_1)\cdot(1-a^2_1)\\
+\\
 \frac{\partial E}{z^2_2}&=\frac{\partial E}{\partial a^2_2}\cdot\frac{\partial a^2_2}{z^2_2}\\
 &=a^2_2\cdot(a^2_2-\hat y_2)\cdot(1-a^2_2)\\
 \end{aligned}
