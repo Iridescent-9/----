@@ -75,11 +75,7 @@ $$
 
 $$
 \begin{aligned}
-E_1&=\frac{1}{2}\cdot(\hat{y_1}-y_1)^2\\
-E_2&=\frac{1}{2}\cdot(\hat{y_2}-y_2)^2\\
-\\
-E&=E_1+E_2\\
-&=\frac{1}{2}\cdot(\hat y_1-y_1)^2+\frac{1}{2}\cdot (\hat y_2-y_2)^2\\
+E&=\frac{1}{2}\cdot(\hat y_1-y_1)^2+\frac{1}{2}\cdot (\hat y_2-y_2)^2\\
 &=\frac{1}{2}\cdot(\hat y_1-a^2_1)^2+\frac{1}{2}\cdot (\hat y_2-a^2_2)^2\\
 \end{aligned}
 $$
@@ -166,14 +162,12 @@ z^2_2&=w^2_{12}\cdot a^1_1+w^2_{22}\cdot a^1_2+b^2_1\\
 \\
 \\
 \\
-\frac{\partial E}{\partial a^1_1}&=\frac{\partial E_1}{\partial a^1_1}+\frac{\partial E_2}{\partial a^1_1}\\
-&=\frac{\partial E_1}{\partial z^2_1}\cdot\frac{\partial z^2_1}{\partial a^1_1}+\frac{\partial E_2}{\partial z^2_2}\cdot\frac{\partial z^2_2}{\partial a^1_1}\\
-&=\frac{\partial E_1}{\partial a^2_1}\cdot\frac{\partial a^2_1}{\partial z^2_1}\cdot\frac{\partial z^2_1}{\partial a^1_1}+\frac{\partial E_2}{\partial a^2_2}\cdot\frac{\partial a^2_2}{\partial z^2_2}\cdot\frac{\partial z^2_2}{\partial a^1_1}\\
+\frac{\partial E}{\partial a^1_1}&=\frac{\partial E}{\partial a^1_1}+\frac{\partial E}{\partial a^1_1}\\
+&=\frac{\partial E}{\partial z^2_1}\cdot\frac{\partial z^2_1}{\partial a^1_1}+\frac{\partial E}{\partial z^2_2}\cdot\frac{\partial z^2_2}{\partial a^1_1}\\
 &=w^2_{11}\cdot a^2_1\cdot(a^2_1-\hat{y_1})\cdot(1-a^2_1)+w^2_{12}\cdot a^2_2\cdot(a^2_2-\hat{y_2})\cdot(1-a^2_2)\\
 \\
-\frac{\partial E}{\partial a^1_2}&=\frac{\partial E_1}{\partial a^1_2}+\frac{\partial E_2}{\partial a^1_2}\\
-&=\frac{\partial E_1}{\partial z^2_1}\cdot\frac{\partial z^2_1}{\partial a^1_2}+\frac{\partial E_2}{\partial z^2_2}\cdot\frac{\partial z^2_2}{\partial a^1_2}\\
-&=\frac{\partial E_1}{\partial a^2_1}\cdot\frac{\partial a^2_1}{\partial z^2_1}\cdot\frac{\partial z^2_1}{\partial a^1_2}+\frac{\partial E_2}{\partial a^2_2}\cdot\frac{\partial a^2_2}{\partial z^2_2}\cdot\frac{\partial z^2_2}{\partial a^1_2}\\
+\frac{\partial E}{\partial a^1_2}&=\frac{\partial E}{\partial a^1_2}+\frac{\partial E}{\partial a^1_2}\\
+&=\frac{\partial E}{\partial z^2_1}\cdot\frac{\partial z^2_1}{\partial a^1_2}+\frac{\partial E}{\partial z^2_2}\cdot\frac{\partial z^2_2}{\partial a^1_2}\\
 &=w^2_{21}\cdot a^2_1\cdot(a^2_1-\hat{y_1})\cdot(1-a^2_1)+w^2_{22}\cdot a^2_2\cdot(a^2_2-\hat{y_2})\cdot(1-a^2_2)
 \end{aligned}
 $$
