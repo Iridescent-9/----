@@ -217,3 +217,14 @@ $$
 &=x_2\cdot a^1_2\cdot(1-a^1_2)\cdot[w^2_{21}\cdot a^2_1\cdot(a^2_1-\hat{y_1})\cdot(1-a^2_1)+w^2_{22}\cdot a^2_2\cdot(a^2_2-\hat{y_2})\cdot(1-a^2_2)]\\
 \end{aligned}
 $$
+
+- ## 权值更新
+
+![ ](gengxin.jpg)
+
+> 斜率为正时，权值向左移动，减小斜率，$W-\Delta W$
+>
+> 斜率为负时，权值向右移动，减小斜率，$W+(-\Delta W)$
+
+$$ W^+=W-\eta \cdot \frac{\partial E}{\partial W} $$
+$$ b^+=b- \eta \cdot \frac{\partial E}{\partial b} $$
